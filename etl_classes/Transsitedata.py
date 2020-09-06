@@ -11,7 +11,8 @@ class Transformsite:
         try:
             self.dstmp = dt.now().strftime("%Y-%m-%d_%H:%M:%S_%p")
             self.stginfile=stgloc
-            self.tgtoutfile=tgtloc+'\\TgtStockData_'+(str(self.dstmp).replace(':',''))+'.txt'
+            #self.tgtoutfile=tgtloc+'\\IndexData_'+(str(self.dstmp).replace(':',''))+'.txt'
+            self.tgtoutfile=tgtloc+'\\Tgt_IndexData.raw'
             self.rowid=0
             self.rowlst=['INDEX_ID','INDEX_NAME','PRICE','CHANGE_AMT','CHANGE_PERCENT','TIMESTAMP','YEAR','MONTH','DAY']
         except Exception as error:

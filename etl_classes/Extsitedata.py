@@ -15,7 +15,7 @@ class Extractsite:
             self.URL= 'https://www.moneycontrol.com/'
             self.dttime=dt.now().strftime("%Y-%m-%d_%H:%M:%S")
             self.dtday =d.today().strftime("%a")
-            self.stgfile =stgloc+'StgStockData.txt'
+            self.stgfile =stgloc+'Stg_IndexData.raw'
         except Exception as error:
             print('Error in Extractsite - INIT '+ str(error))
 

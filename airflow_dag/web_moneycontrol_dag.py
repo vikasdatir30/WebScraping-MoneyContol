@@ -11,8 +11,8 @@ import Extsitedata  as ext
 import Transsitedata as trn
 #import Loadsitedata as ld
 
-HDFSpath ="/user/moneycontrol/src"
-HDFScmd = "hdfs dfs -put "
+HDFSpath ="/user/moneycontrol/src/stg_indextbl"
+HDFScmd = "hdfs dfs -put -f"
 
 default_args={
 "start_date" : dt(2020,8,29),
